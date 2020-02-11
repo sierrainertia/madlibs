@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap"
+      rel="stylesheet"
+    />
+    <title>Build a Story</title>
+  </head>
+  <body>
+    <div class="box">
+      <header class="wrapper">
+        <h1>Build a story!</h1>
+        <p>
+          My goal with creating this 'Madlibs' was to practice using various
+          html tags to create a functioning form.
+        </p>
+        <h2>Skills used:</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Javascript</li>
+        </ul>
+      </header>
+
+      <main>
+        <div class="wrapper">
+          <h2>
+            Complete the form to create your story!
+          </h2>
+
+          <form>
+            <div class="row">
+              <label for="animal-1">Animal #1:</label>
+              <input type="text" id="animal-1" name="animal-1" required />
+            </div>
+            <div class="row">
+              <label for="animal-2">Animal #2:</label>
+              <input type="text" id="animal-2" name="animal-2" required />
+            </div>
+            <div class="row">
+              <label for="animal-3">Animal #3:</label>
+              <input type="text" id="animal-3" name="animal-3" required />
+            </div>
+            <div class="row">
+              <label for="adj-1">Adjective (descriptive word):</label>
+              <input type="text" id="adj-1" name="adj-1" required />
+            </div>
+            <div class="row">
+              <label for="verb-1">Verb (action word):</label>
+              <input type="text" id="verb-1" name="verb-1" required />
+            </div>
+            <div class="row">
+              <label for="num-1">Number:</label>
+              <input type="number" id="num-1" name="num-1" required />
+            </div>
+            <div class="row">
+              <span> Yes or No:</span>
+              <input type="radio" id="yes" name="answer" value="yes" required />
+              <label for="yes">Yes</label>
+              <input type="radio" id="no" name="answer" value="no" required/>
+              <label for="no"> No</label>
+            </div>
+            <div class="row">
+              <label for="speed"> Speed:</label>
+              <select id="speed" name="speed" required>
+                <option value="faster">Faster</option>
+                <option value="slower">Slower</option>
+              </select>
+            </div>
+            <div class="row">
+              <label for="quote"> Motivational Quote:</label>
+              <input
+                type="text"
+                id="quote"
+                name="quote"
+                list="quote-choices"
+                required
+              />
+              <datalist id="quote-choices">
+                <option value="winner gets ice cream!"></option>
+                <option value="you snooze you lose"></option>
+                <option value="early bird gets the worm"></option>
+              </datalist>
+            </div>
+            <div class="row">
+              <label for="message">Meaningful Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                rows="1"
+              ></textarea>
+            </div>
+            <div class="row buttons">
+              <button class="submit" type="submit">Form My Story!</button> 
+              <button class="refresh" type="submit"  onClick="refreshPage()">Start again!</button> 
+            </div>
+          </form>
+        </div>
+      </main>
+    </div>
+    <div class="box story">
+      <p>
+        A <span data-blank="animal-1"></span> was making fun of the
+        <span data-blank="animal-2"></span> one day for being so slow.
+      </p>
+
+      <p>"Do you ever get anywhere?" he asked with a mocking laugh.</p>
+
+      <p>
+        "<span data-blank="yes-no"></span>," replied the
+        <span data-blank="animal-2"></span>, "and I get there
+        <span data-blank="speed"></span> than you think. I'll run you a race and
+        prove it."
+      </p>
+
+      <p>
+        The <span data-blank="animal-1"></span> was much <span data-blank="adjective"> at the idea of
+        running a race with the <span data-blank="animal-2"></span> but for the fun of the thing he
+        agreed. So the <span data-blank="animal-3"></span>,who had consented to act as judge, marked the
+        distance and yelled, "<span data-blank="motivational"></span>".
+      </p>
+
+      <p>
+        The <span data-blank="animal-1"></span> was soon far out of sight, and to make the <span data-blank="animal-2"></span> feel very
+        deeply how ridiculous it was for him to try a race with a <span data-blank="animal-1"></span>, he lay
+        down beside the course to take a nap until the <span data-blank="animal-2"></span> should catch up. Saying he will just sleep for <span data-blank="number"></span> hours until the <span data-blank="animal-2"></span> catches up.
+      </p>
+
+      <p>
+        The <span data-blank="animal-2"></span> meanwhile kept going slowly but steadily, and, after a
+        time, passed the place where the <span data-blank="animal-1"></span> was sleeping. But the <span data-blank="animal-1"></span> slept
+        on very peacefully; and when at last he did wake up, the <span data-blank="animal-2"></span> was
+        near the goal. The <span data-blank="animal-1"></span> now <span data-blank="verb"></span> his swiftest, but he could not overtake
+        the <span data-blank="animal-2"></span> in time.
+        
+      </p>
+      <p>
+        <h4>Moral of the story:</h4>
+        <span data-blank="message">
+        </span>
+      </p>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
