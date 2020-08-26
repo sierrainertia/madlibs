@@ -1,98 +1,122 @@
 // listens for form submits
-document.querySelector("form").addEventListener("submit", event => {
+document.querySelector("form").addEventListener("submit", (event) => {
   // prevents the page from refreshing
   event.preventDefault();
 
-  //selects animal-1 from html
-  var animal1 = document.querySelector("#animal-1").value;
-  //gets all blanks labeled animal-1
-  var animal1blanks = document.querySelectorAll("span[data-blank=animal-1]");
+  //selects name1 from html
+  const name1 = document.querySelector("#name1").value;
+  //gets all blanks labeled name1
+  const name1blanks = document.querySelectorAll("span[data-blank=name1]");
   //put stuff on page
-  animal1blanks.forEach(blank => {
-    blank.innerHTML = animal1;
+  name1blanks.forEach((blank) => {
+    blank.innerHTML = name1;
   });
 
-  //selects animal 2
-  var animal2 = document.querySelector("#animal-2").value;
-  //gets all blanks labeled animal-2
-  var animal2blanks = document.querySelectorAll("span[data-blank=animal-2]");
-  //put stuff on page
-  animal2blanks.forEach(blank => {
-    blank.innerHTML = animal2;
-  });
-
-  //selects animal 3
-  var animal3 = document.querySelector("#animal-3").value;
-  //gets all blanks labeled animal-3
-  var animal3blanks = document.querySelectorAll("span[data-blank=animal-3]");
-  //put stuff on page
-  animal3blanks.forEach(blank => {
-    blank.innerHTML = animal3;
-  });
-
-  //selects an adjective
-  var adjective = document.querySelector("#adj-1").value;
-  //gets all blanks labeled adjective
-  var adjectiveblanks = document.querySelectorAll("span[data-blank=adjective]");
-  //put stuff on page
-  adjectiveblanks.forEach(blank => {
-    blank.innerHTML = adjective;
-  });
-
-  //selects the motivational quote
-  var motivational = document.querySelector("#quote").value;
-  //gets all blanks labeled adjective
-  var motivationalblanks = document.querySelectorAll(
-    "span[data-blank=motivational]"
+  //selects adjective1
+  const adjective1 = document.querySelector("#adjective1").value;
+  //gets all blanks labeled adjective1
+  const adjective1blanks = document.querySelectorAll(
+    "span[data-blank=adjective1]"
   );
   //put stuff on page
-  motivationalblanks.forEach(blank => {
-    blank.innerHTML = motivational;
+  adjective1blanks.forEach((blank) => {
+    blank.innerHTML = adjective1;
   });
 
-  //selects the verb quote
-  var verb = document.querySelector("#verb-1").value;
+  //selects bug or animal
+  const bugOrAnimal = document.querySelector("#bugOrAnimal").value;
+  //gets all blanks labeled bugOrAnimal
+  const animal3blanks = document.querySelectorAll(
+    "span[data-blank=bugOrAnimal]"
+  );
+  //put stuff on page
+  animal3blanks.forEach((blank) => {
+    blank.innerHTML = bugOrAnimal;
+  });
+
+  //selects an action verb
+  const action1 = document.querySelector("#action1").value;
+  //gets all blanks labeled action1
+  const action1blanks = document.querySelectorAll("span[data-blank=action1]");
+  //put stuff on page
+  action1blanks.forEach((blank) => {
+    blank.innerHTML = action1;
+  });
+
+  //selects the direction1
+  const direction1 = document.querySelector("#direction1").value;
   //gets all blanks labeled adjective
-  var verbblanks = document.querySelectorAll("span[data-blank=verb]");
+  const direction1blanks = document.querySelectorAll(
+    "span[data-blank=direction1]"
+  );
   //put stuff on page
-  verbblanks.forEach(blank => {
-    blank.innerHTML = verb;
+  direction1blanks.forEach((blank) => {
+    blank.innerHTML = direction1;
   });
 
-  //selects the number
-  var number = document.querySelector("#num-1").value;
-  //gets all blanks labeled number
-  var numberblanks = document.querySelectorAll("span[data-blank=number]");
+  //selects the direction2
+  const direction2 = document.querySelector("#direction2").value;
+  //gets all blanks labeled adjective
+  const direction2blanks = document.querySelectorAll(
+    "span[data-blank=direction2]"
+  );
   //put stuff on page
-  numberblanks.forEach(blank => {
-    blank.innerHTML = number;
+  direction2blanks.forEach((blank) => {
+    blank.innerHTML = direction2;
   });
 
-  //selects yes or no input
-  var yesno = document.querySelector("[name=answer]:checked").value;
-  //gets all blanks labeled yes-no
-  var yesnoblanks = document.querySelectorAll("span[data-blank=yes-no]");
+  //selects num1
+  const num1 = document.querySelector("#num1").value;
+  //gets all blanks labeled adjective
+  const num1blanks = document.querySelectorAll("span[data-blank=num1]");
   //put stuff on page
-  yesnoblanks.forEach(blank => {
-    blank.innerHTML = yesno;
+  num1blanks.forEach((blank) => {
+    blank.innerHTML = num1;
   });
 
-  //selects the speed
-  var speed = document.querySelector("#speed").value;
-  //gets all blanks labeled speed
-  var speedblanks = document.querySelectorAll("span[data-blank=speed]");
+  //selects the name 2
+  const name2 = document.querySelector("#name2").value;
+  //gets all blanks labeled name2
+  const name2blanks = document.querySelectorAll("span[data-blank=name2]");
   //put stuff on page
-  speedblanks.forEach(blank => {
-    blank.innerHTML = speed;
+  name2blanks.forEach((blank) => {
+    blank.innerHTML = name2;
   });
 
-  //selects the message
-  var message = document.querySelector("#message").value;
-  //gets all blanks labeled message
-  var messageblanks = document.querySelectorAll("span[data-blank=message]");
+  //selects 2nd action verb
+  const action2 = document.querySelector("#action2").value;
+  //gets all blanks labeled action2
+  const action2blanks = document.querySelectorAll("span[data-blank=action2]");
   //put stuff on page
-  messageblanks.forEach(blank => {
-    blank.innerHTML = speed;
+  action2blanks.forEach((blank) => {
+    blank.innerHTML = action2;
+  });
+
+  //selects num2
+  const num2 = document.querySelector("#num2").value;
+  //gets all blanks labeled adjective
+  const num2blanks = document.querySelectorAll("span[data-blank=num2]");
+  //put stuff on page
+  num2blanks.forEach((blank) => {
+    blank.innerHTML = num2;
+  });
+
+  //selects num3
+  const num3 = document.querySelector("#num3").value;
+  //gets all blanks labeled adjective
+  const num3blanks = document.querySelectorAll("span[data-blank=num3]");
+  //put stuff on page
+  num3blanks.forEach((blank) => {
+    blank.innerHTML = num3;
+  });
+
+  //selects num4
+  const num4 = document.querySelector("#num4").value;
+  //gets all blanks labeled adjective
+  const num4blanks = document.querySelectorAll("span[data-blank=num4]");
+  //put stuff on page
+  num4blanks.forEach((blank) => {
+    blank.innerHTML = num4;
   });
 
   //show the story when submit is pressed
