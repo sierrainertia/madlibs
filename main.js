@@ -125,5 +125,8 @@ document.querySelector("form").addEventListener("submit", (event) => {
 
 //refresh page when pressing restart
 function refreshPage() {
-  window.location.reload();
+  document.querySelector("form").reset();
+  document.querySelector(".story").style.display = "none";
+  // reload to top of screen
+  window.scrollTo(0, 0);
 }
